@@ -29,7 +29,7 @@ class ThirdViewController: UIViewController {
         calories.text = "\(Int(caloriesBurned!)) calories burned!"
         
         // This presents an alert offering to go again
-        let alert = UIAlertController(title: "Calculation Complete:", message: "You've burned \(Int(caloriesBurned!)) calories! Would you like to start over?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Calculation Complete!", message: "You've burned \(Int(caloriesBurned!)) calories. Would you like to start over?", preferredStyle: .alert)
         
         // This will add an action to the alert that resets the app
         alert.addAction(UIAlertAction(title: "Go Again", style: .default, handler: { [weak self] _ in
